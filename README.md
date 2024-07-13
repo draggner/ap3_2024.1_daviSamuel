@@ -2,3 +2,5 @@
 Exercícios do AP3 do semestre 2024.1 de Francisco Arruda da UFERSA - Campus Angicos
 
 Fiz a primeira alteração!
+
+Fiz a segunda alteração!

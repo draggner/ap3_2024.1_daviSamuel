@@ -44,5 +44,23 @@ public class Aluno {
     this.nota3 = nota3;
   }
 
-  
+  public double getMedia() {
+    return (nota1 + nota2 + nota3) / 3;
+  }
+
+  public boolean getAprovado() {
+    if (getMedia() >= 7) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public String getNomeMaiusculo() {
+    return nome.toUpperCase();
+  }
+
+  public String getNomeMinusculo() {
+    return nome.toLowerCase();
+  }
 }

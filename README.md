@@ -1,8 +1,2 @@
 # ap3_2024.1_daviSamuel
-Exercícios do AP3 do semestre 2024.1 de Francisco Arruda da UFERSA - Campus Angicos
-
-Fiz a primeira alteração!
-
-Fiz a segunda alteração!
-
-Fiz a terceira alteração!
+Exercícios do AP3 do semestre 2024.1, ministrado por Prof.º Francisco Arruda (Xico) - UFERSA, Campus Angicos

@@ -1,22 +1,18 @@
 package unidade1.gabarito_aula4;
 
-public class Aluno {
+import java.time.LocalDate;
 
+public class Aluno {
   
   String nome = "SemNome";
   double nota1 = 5;
   double nota2 = -1;
   double nota3 = -1;
   String nomeDaMae = "Maezinha";
+  boolean aprovadoMedia = false;
+  LocalDate dataNascimento = null;
+  LocalDate dataCadastro = LocalDate.now();
   
-  public String getNomeDaMae() {
-    return nomeDaMae;
-  }
-
-  public void setNomeDaMae(String nomeDaMae) {
-    this.nomeDaMae = nomeDaMae;
-  }
-
   public String getNome() {
     return nome;
   }
@@ -44,14 +40,49 @@ public class Aluno {
   public double getNota3() {
     return nota3;
   }
-
+  
   public void setNota3(double nota3) {
     this.nota3 = nota3;
   }
   
+  public boolean isAprovadoMedia() {
+   return aprovadoMedia;
+ }
+ 
+  public void setAprovadoMedia(boolean aprovadoMedia) {
+    this.aprovadoMedia = aprovadoMedia;
+  }
+  
+  
+  public String getNomeDaMae() {
+    return nomeDaMae;
+  }
+  
+  public void setNomeDaMae(String nomeDaMae) {
+    this.nomeDaMae = nomeDaMae;
+  }
+  
+  public LocalDate getDataCadastro() {
+    return dataCadastro;
+  }
+  
+  public LocalDate getDataNascimento() {
+    return dataNascimento;
+  }
+  
+  
+  public void setDataNascimento(LocalDate dataNascimento) {
+    this.dataNascimento = dataNascimento;
+  }
+
+  public void setDataCadastro(LocalDate dataCadastro) {
+    this.dataCadastro = dataCadastro;
+  }
+
   @Override
   public String toString() {
     return "Aluno [nome=" + nome + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nomeDaMae="
-        + nomeDaMae + "]";
+        + nomeDaMae + ", aprovadoMedia=" + aprovadoMedia + ", dataNascimento=" + dataNascimento + ", dataCadastro="
+        + dataCadastro + "]";
   }
 }

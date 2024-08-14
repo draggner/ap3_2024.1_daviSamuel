@@ -1,42 +1,50 @@
-package br.com.ap3..distancia;
-
-import java.util.Scanner;
+package unidade1.exercicio1;
 
 public class Questao1 {
-  public double getDistancia
-  {
 
-  Scanner teclado = new Scanner(System.out)
-
-  double x1, y1, x2, y2, distancia = 1.0;
-
-  System.out.println("Entre com as coordenadas x e y dos pontos nesta ordem:");
-  x1=teclado.nextFloat();
-  y1=teclado.nextFloat();
-  x2=teclado.nextFloat();
-  y2=teclado.nextFloat();
-
-  distancia=Math.pow(Math.pow(x2-x1,2)+Math.pow(y2-y1,2),1/2);
-
-  System.out.println("A distância é: "+distancia);
-    return 0.1;
-  }
-
-  }
-
-  public double getAmplitude();{
+  double x1 = 1.0;  
+  double y1 = 1.0;
+  double x2 = 1.0;
+  double y2 = 1.0;
+  double distancia = 1.0;
   
-  double val1 = 0.0,val2=a,val3=-a;
+  public double getX1() {
+    return x1;
+  }
 
-  double amplitude2() {
-    return val1 - val2;
-  }return
+  public void setX1(double x1) {
+    this.x1 = x1;
+  }
 
-  amplitude2()-val3;  
-    }return-1;
+  public double getY1() {
+    return y1;
+  }
 
-  public static void main(String[] args) {
-      sysout(getDistancia());
-      sysout(getAmplitude());
-    }
+  public void setY1(double y1) {
+    this.y1 = y1;
+  }
+
+  public double getX2() {
+    return x2;
+  }
+
+  public void setX2(double x2) {
+    this.x2 = x2;
+  }
+
+  public double getY2() {
+    return y2;
+  }
+
+  public void setY2(double y2) {
+    this.y2 = y2;
+  }
+  
+  public double getDistancia() {
+    return distancia;
+  }
+
+  public void setDistancia(double distancia) {
+    this.distancia = distancia;
+  }
 }

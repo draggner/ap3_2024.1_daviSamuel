@@ -5,27 +5,37 @@ import java.util.Random;
 
 public class Questao2 {
   public static void main(String[] args) {
-    
+    int menorNum = 0;
     LinkedList<Integer> listaNumerica = new LinkedList<>();
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 5; i++) {
       Random aleatorio = new Random();
 
       int temp = aleatorio.nextInt(10000);
-
       listaNumerica.add(temp);
-    }
-  
-    //   ListaNumerica umaListaNumerica = new ListaNumerica();
-    //   Random aleatorio = new Random();
+      System.out.println(" ");
+      System.out.println("Valores da Lista: " + listaNumerica);
+      for (int j = 0; j < listaNumerica.size(); j++) {
+        System.out.println(" Passei Aqui ");
+        // 1 Implementar a lógica de percorrer a lista
+        // 2 Verificação do [Índice atual] da lista para o próximo
+        // 2.1 Pegar o valor do Indice atual
+        System.out.println(listaNumerica.get(j));
+        int numAtual = temp;
+        // 2.2 Pegar o valor do Indice do Próximo
+        System.out.println(listaNumerica.getLast());
+        int numProximo = listaNumerica.getLast();
+        
+        int listTemp = 0;
+        if (numAtual <= numProximo) {
+          listTemp = numAtual;
+          menorNum = listTemp;
+        } else {
+          listTemp = numProximo;
+          menorNum = listTemp;
+        }
 
-    //   int numb = aleatorio.nextInt(umaListaNumerica.getValor());
-      
-    //   if (numb <= umaListaNumerica.getValor()) {
-    //     System.out.println(numb);
-    //     System.out.println(umaListaNumerica.getValor());
-    //     umaListaNumerica.setValor(numb);
-    //   }
-    //   System.out.println("Passei aqui");
-    // }
+        System.out.println("Resultado: " + menorNum);
+      }
+    }
   }
 }

@@ -48,7 +48,8 @@ public class Coodernadas {
     umQuestao1.setDistancia(distancia);
     System.out.println("Valor Total da Distância: " + umQuestao1.getDistancia());
 
-    // Dar continuidade a parti daqui
+    System.out.println("Valor Total da Amplitude de X: " + umQuestao1.getAmplitude(x1, x2));
+    System.out.println("Valor Total da Amplitude de Y: " + umQuestao1.getAmplitude(y1, y2));
 
     teclado.close();
   }

@@ -2,6 +2,10 @@ package unidade1.exercicio1;
 
 import unidade1.exercicio1.Contato;
 
+/*
+ * 4) Construa e teste com 3 instâncias diferentes a classe a seguir. No toString() exiba todos os valores dos atributos, sendo que nome deve ser exibido sempre em letra MAIÚSCULA. As 3 instâncias devem ser criadas no método main. O construtor é feito com 2 parâmetros. Os nomes nas instâncias devem ser de pintores renascentistas.
+ */
+
 public class Questao4 {
   public static void main(String[] args) {
     Contato contatoUm = new Contato("Leonardo da Vinci", "+39 99880-00");

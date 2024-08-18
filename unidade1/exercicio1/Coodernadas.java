@@ -6,8 +6,7 @@ import unidade1.exercicio1.Questao1;
 /**
  * Class Coodernadas
  * 
- * 
- * Este programa demonstra a inicialização de inserir valores de coordenadas especificas para descobrir a distância e amplitude.
+ * - Este programa demonstra a inicialização de inserir valores de coordenadas especificas para descobrir a distância e amplitude.
  * 
  * @author Davi Samuel G. A.
  * @version 1.1

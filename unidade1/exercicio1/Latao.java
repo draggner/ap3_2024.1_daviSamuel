@@ -3,7 +3,7 @@ package unidade1.exercicio1;
 /**
  * Class Latao
  * 
- * Este programa serve para indicar a quantidade de cada componente de Zinco e Cobre para informar a quantidade de quilos de latão, conforme o valor inserido pelo usuário.
+ * - Este programa serve para indicar a quantidade de cada componente de Zinco e Cobre para informar a quantidade de quilos de latão, conforme o valor inserido pelo usuário.
  * 
  * @author Davi Samuel G. A.
  * @version 1.0

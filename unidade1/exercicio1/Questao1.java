@@ -1,5 +1,9 @@
 package unidade1.exercicio1;
 
+/*
+ * 1) Corrija os erros do arquivo "Questao1.java" que estão no seu repositório.
+ */
+
 public class Questao1 {
 
   double x1 = 1.0;  

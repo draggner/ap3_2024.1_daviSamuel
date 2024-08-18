@@ -3,6 +3,10 @@ package unidade1.exercicio1;
 import java.util.LinkedList;
 import java.util.Random;
 
+/*
+ * 2) Em um método main, faça um programa que exiba para o usuário o menor inteiro positivo de uma lista ligada de 9999 npumeros gerados aleatoriamente.
+ */
+
 public class Questao2 {
   public static void main(String[] args) {
     int menorNum = 0;

@@ -2,16 +2,17 @@ package unidade1.exercicio1;
 
 /*
  * 1) Corrija os erros do arquivo "Questao1.java" que estão no seu repositório.
+ * COD: 695686780
  */
 
 public class Questao1 {
 
-  double x1 = 1.0;  
+  double x1 = 1.0;
   double y1 = 1.0;
   double x2 = 1.0;
   double y2 = 1.0;
   double distancia = 1.0;
-  
+
   double valor1 = 0.0;
   double valor2 = 0.0;
   double amplitude = 0.0;
@@ -23,7 +24,7 @@ public class Questao1 {
   public void setX1(double x1) {
     this.x1 = x1;
   }
-  
+
   public double getY1() {
     return y1;
   }
@@ -47,7 +48,7 @@ public class Questao1 {
   public void setY2(double y2) {
     this.y2 = y2;
   }
-  
+
   public double getDistancia() {
     return distancia;
   }

@@ -5,6 +5,7 @@ import java.util.Random;
 
 /*
  * 2) Em um método main, faça um programa que exiba para o usuário o menor inteiro positivo de uma lista ligada de 9999 npumeros gerados aleatoriamente.
+ * COD: 695686780
  */
 
 public class Questao2 {
@@ -28,7 +29,7 @@ public class Questao2 {
         // 2.2 Pegar o valor do Indice do Próximo
         System.out.println(listaNumerica.getLast());
         int numProximo = listaNumerica.getLast();
-        
+
         int listTemp = 0;
         if (numAtual <= numProximo) {
           listTemp = numAtual;

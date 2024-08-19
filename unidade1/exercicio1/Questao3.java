@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /*
  * 3) Sabendo que latão é 70% de cobre e 30% de zinco, indique a quantidade de cada um desses componentes para se obter uma certa quantidade de quilos de latão que foi requerida pelo usuário.
+ * COD: 695686780
  */
 
 public class Questao3 {

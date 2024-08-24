@@ -22,6 +22,6 @@ public class Lanchonete {
   }
 
   protected void fazerPedido(String cliente, List<Lanche> pedido){
-    
+    System.out.println("Nome do Cliente: " + cliente + " Lanche: " + pedido);
   }
 }

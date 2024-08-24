@@ -5,6 +5,12 @@ public class MainLanchonete {
     Lanchonete fornoAlenha = new Lanchonete();
     Lanchonete pizzariaAlternativa = new Lanchonete();
 
+    pizzariaAlternativa.listaPedidos();
+    fornoAlenha.listaPedidos();
 
+    pizzariaAlternativa.listarItens();
+    fornoAlenha.listarItens();
+
+    pizzariaAlternativa.fazerPedido("Davi Samuel", "Pizza de Franco Catupy");
   }
 }

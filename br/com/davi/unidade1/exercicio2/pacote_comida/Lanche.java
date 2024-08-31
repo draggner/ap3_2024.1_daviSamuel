@@ -1,12 +1,12 @@
 package br.com.davi.unidade1.exercicio2.pacote_comida;
 
 public class Lanche {
-  
   String item;
   double preco;
 
-  public Lanche(String nome, double preco) {
-
+  public Lanche(String item, double preco) {
+    this.item = item;
+    this.preco = preco;
   }
 
   public String getItem() {

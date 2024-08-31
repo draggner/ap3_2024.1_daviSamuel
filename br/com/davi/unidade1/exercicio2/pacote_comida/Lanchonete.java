@@ -3,25 +3,32 @@ package br.com.davi.unidade1.exercicio2.pacote_comida;
 import java.util.List;
 
 public class Lanchonete {
-  List<Lanche> pedido;
+  List<Lanche> pedidos;
 
-  public List<Lanche> getPedido() {
-    return pedido;
+  // public Lanchonete() {
+  //   lanches = new LinkedList<>();
+  // }
+
+  public List<Lanche> getPedidos() {
+    return pedidos;
   }
 
-  public void setPedido(List<Lanche> pedido) {
-    this.pedido = pedido;
+  public void setPedidos(List<Lanche> pedidos) {
+    this.pedidos = pedidos;
   }
 
-  public void listarItens() {
-
-  }
-  
-  public void listaPedidos() {
-    
+  public void listarItens(String item) {
+      
   }
 
-  protected void fazerPedido(String cliente, List<Lanche> pedido){
-    System.out.println("Nome do Cliente: " + cliente + " Lanche: " + pedido);
+  public void listarPedidos() {
+    for (Lanche lanche : pedidos) {
+      System.out.println(lanche);
+    }
+  }
+
+  protected void fazerPedido(String cliente, Lanche lanche) {
+    pedidos.add(lanche);
+   
   }
 }

@@ -13,5 +13,6 @@ public class MainLanchonete {
     fornoAlenha.fazerPedido("Davi Samuel", pizzaCalabresa);
 
     fornoAlenha.listarPedidos();
+    fornoAlenha.listarItens();
   }
 }

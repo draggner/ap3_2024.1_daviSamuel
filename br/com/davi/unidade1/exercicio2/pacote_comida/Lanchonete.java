@@ -1,13 +1,14 @@
 package br.com.davi.unidade1.exercicio2.pacote_comida;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Lanchonete {
   List<Lanche> pedidos;
 
-  // public Lanchonete() {
-  //   lanches = new LinkedList<>();
-  // }
+  public Lanchonete() {
+    pedidos = new LinkedList<>();
+  }
 
   public List<Lanche> getPedidos() {
     return pedidos;
@@ -17,8 +18,10 @@ public class Lanchonete {
     this.pedidos = pedidos;
   }
 
-  public void listarItens(String item) {
-      
+  public void listarItens() {
+    for (int i = 0; i < pedidos.size(); i++) {
+      System.out.println(pedidos.get(i).getItem());
+    }
   }
 
   public void listarPedidos() {
@@ -29,6 +32,6 @@ public class Lanchonete {
 
   protected void fazerPedido(String cliente, Lanche lanche) {
     pedidos.add(lanche);
-   
+
   }
 }

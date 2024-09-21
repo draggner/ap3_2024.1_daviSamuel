@@ -1,10 +1,10 @@
 package restaurante_polimorfismo;
 
-public class Garsom extends Funcionario {
+public class Garcom extends Funcionario {
     
   private double valorGorjeta;
 
-  public Garsom(String nome, String cargo, double valorGorjeta) {
+  public Garcom(String nome, String cargo, double valorGorjeta) {
     super(nome, cargo);
     this.valorGorjeta = valorGorjeta;
   }

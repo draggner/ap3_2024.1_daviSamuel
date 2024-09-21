@@ -8,7 +8,7 @@ import restaurante_polimorfismo.TRABALHA_NUMA;
 public class MainRestaurante {
   public static void main(String[] args) {
     //comPolimorfismo();
-
+    semPolimorfismo();
   }
 
   public static void semPolimorfismo() {

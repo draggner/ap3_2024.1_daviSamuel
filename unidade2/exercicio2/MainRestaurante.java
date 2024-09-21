@@ -1,3 +1,4 @@
+import restaurante_heranca.Garsom;
 import restaurante_polimorfismo.AuxiliarCozinha;
 import restaurante_polimorfismo.Barman;
 import restaurante_polimorfismo.Funcionario;
@@ -6,7 +7,23 @@ import restaurante_polimorfismo.TRABALHA_NUMA;
 
 public class MainRestaurante {
   public static void main(String[] args) {
-    comPolimorfismo();
+    //comPolimorfismo();
+
+  }
+
+  public static void semPolimorfismo() {
+    System.out.println("\n");
+    System.out.println("Implementação sem Polimorfismo");
+
+    Garcom umGarcomUm = new Garcom("Davi Samuel", "Programas em Categoria II", 1500);
+    AuxiliarCozinha umAuxiliarCozinhaUm = new AuxiliarCozinha("Gabriel", "Programas em III", "Noturno",
+        TRABALHA_NUMA.LIMPEZA);
+
+    Barman umBarmanUm = new Barman("João Gabriel", "Programas em IV", "Júnior");
+
+    umAuxiliarCozinhaUm.trabalhar();
+    umBarmanUm.trabalhar();
+    umGarcomUm.trabalhar();
   }
 
   public static void comPolimorfismo() {
@@ -24,7 +41,7 @@ public class MainRestaurante {
     Funcionario umBarman = new Barman("Bénicio", "Barman de Programas", "Chacoalhar Programas");
 
     umBarman.trabalhar();
-    
+
     /*
      * Funcionario umFuncionario = new Funcionario("Davi Samuel",
      * "Desenvolvedor Front-end na Turing Tecnologia");

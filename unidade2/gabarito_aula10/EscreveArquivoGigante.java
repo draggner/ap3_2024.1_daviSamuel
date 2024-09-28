@@ -14,7 +14,7 @@ public class EscreveArquivoGigante {
         boolean append = false;
 
         try {
-            FileWriter arquivoCSV = new FileWriter(nomeDoArquivo);
+            BufferedWriter arquivoCSV = new BufferedWriter(new FileWriter(nomeDoArquivo, append));
             for (int controle = 1; controle <= 598187; controle++) {
                 long idPessoa = controle;
                 String umNome = nomes[random.nextInt(nomes.length)];
@@ -22,6 +22,7 @@ public class EscreveArquivoGigante {
                 double salario = 1500 + (15000 - 1500) * random.nextDouble();
 
                 Pessoa pessoa = new Pessoa(idPessoa, umNome, umSobrenome, salario);
+                arquivoCSV.write(pessoa.toString());
                 arquivoCSV.newLine();
 
                 if (controle % 1000 == 0) {

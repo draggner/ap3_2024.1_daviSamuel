@@ -7,18 +7,18 @@ import java.util.Random;
 
 public class EscreveArquivoGigante {
   public static void main(String[] args) {
-    
+
     String fileCSV = "livro.csv";
 
-    String[] nomesAutores = {"ALVES G. S. D.", "ALVES G. G. J.", "ALVES C. G. J."};
-    String[] titulosLivros = {"Capítulo I - The Three Dragon Hunters of Tagmar", "Capítulo II - Tagmar Dragon Land Slaughters", "Capítulo III - Dragon Abyss in the Deep Tagmar"};
+    String[] nomesAutores = { "ALVES G. S. D.", "ALVES G. G. J.", "ALVES C. G. J." };
+    String[] titulosLivros = { "Capítulo I - The Three Dragon Hunters of Tagmar",
+        "Capítulo II - Tagmar Dragon Land Slaughters", "Capítulo III - Dragon Abyss in the Deep Tagmar" };
 
     Random random = new Random();
     boolean append = false;
 
     try {
-      //BufferedWriter arquivoCSV = new BufferedWriter(new FileWriter(fileCSV, append));
-      BufferedWriter arquivoCSV = new BufferedWriter(new FileWriter(nomeDoArquivo, append));
+      BufferedWriter arquivoCSV = new BufferedWriter(new FileWriter(fileCSV, append));
       for (long control = 0; control <= 9871035L; control++) {
         long idLivro = control;
         String umAutor = nomesAutores[random.nextInt(nomesAutores.length)];
@@ -35,8 +35,7 @@ public class EscreveArquivoGigante {
         }
       }
       arquivoCSV.close();
-    } 
-    catch (IOException error) {
+    } catch (IOException error) {
       error.printStackTrace();
     }
 
